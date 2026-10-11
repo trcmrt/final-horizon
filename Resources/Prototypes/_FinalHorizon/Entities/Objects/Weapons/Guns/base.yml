@@ -40,7 +40,6 @@
         volume: -2
 
 
-
 - type: entity
   parent: FHWeaponBase
   abstract: true
@@ -101,8 +100,6 @@
     range: 150
     sound: /Audio/_FinalHorizon/Weapons/Guns/Far/rpg_dist.ogg
   - type: GunRequiresWield
-
-
 
 - type: entity
   parent: BaseItem

@@ -17,7 +17,6 @@
     - 0,0,3,2
   - type: Clothing
     sprite: _FinalHorizon/Objects/Weapons/Guns/Pistols/pm.rsi
-  - type: AmmoCounter
   - type: Gun
     fireRate: 10
     selectedMode: SemiAuto
