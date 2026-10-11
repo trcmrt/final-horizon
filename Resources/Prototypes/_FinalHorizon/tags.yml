@@ -69,3 +69,6 @@
 
 - type: Tag
   id: FHUtilityItem
+
+- type: Tag
+  id: FHMedical #for any medical items that need to go into ifaks
