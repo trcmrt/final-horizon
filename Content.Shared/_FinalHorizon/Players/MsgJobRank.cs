@@ -12,9 +12,10 @@ public sealed class MsgJobRank : NetMessage
 
     public override void ReadFromBuffer(NetIncomingMessage buffer, IRobustSerializer serializer)
     {
-        var rank = buffer.ReadString();
+        var count = buffer.ReadVariableInt32();
+        buffer.AssertAtLeastSize(count * NetMessageExt.MinSizeOfString);
 
-        JobRank = rank;
+        JobRank = buffer.ReadString();
     }
 
     public override void WriteToBuffer(NetOutgoingMessage buffer, IRobustSerializer serializer)

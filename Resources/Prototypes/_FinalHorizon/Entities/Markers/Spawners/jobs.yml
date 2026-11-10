@@ -439,3 +439,445 @@
     spawn_type: LateJoinJob
   - type: Sprite
     state: green
+
+# BDW
+- type: entity
+  id: SpawnPointBDWPlatoonLeader
+  parent: SpawnPointJobBase
+  name: BDW platoon leader
+  components:
+  - type: SpawnPoint
+    job_id: BDWPlatoonLeader
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointBDWPlatoonLeaderLate
+  parent: SpawnPointJobBase
+  name: BDW platoon leader
+  suffix: Late Join Spawn
+  components:
+  - type: SpawnPoint
+    job_id: BDWPlatoonLeader
+    spawn_type: LateJoinJob
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointBDWTeamLeader
+  parent: SpawnPointJobBase
+  name: BDW team leader
+  components:
+  - type: SpawnPoint
+    job_id: BDWTeamLeader
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointBDWTeamLeaderLate
+  parent: SpawnPointJobBase
+  name: BDW team leader
+  suffix: Late Join Spawn
+  components:
+  - type: SpawnPoint
+    job_id: BDWTeamLeader
+    spawn_type: LateJoinJob
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointBDWMedic
+  parent: SpawnPointJobBase
+  name: BDW medic
+  components:
+  - type: SpawnPoint
+    job_id: BDWMedic
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointBDWMedicLate
+  parent: SpawnPointJobBase
+  name: BDW medic
+  suffix: Late Join Spawn
+  components:
+  - type: SpawnPoint
+    job_id: BDWMedic
+    spawn_type: LateJoinJob
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointBDWMachineGunner
+  parent: SpawnPointJobBase
+  name: BDW machine gunner
+  components:
+  - type: SpawnPoint
+    job_id: BDWMachineGunner
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointBDWMachineGunnerLate
+  parent: SpawnPointJobBase
+  name: BDW machine gunner
+  suffix: Late Join Spawn
+  components:
+  - type: SpawnPoint
+    job_id: BDWMachineGunner
+    spawn_type: LateJoinJob
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointBDWSniper
+  parent: SpawnPointJobBase
+  name: BDW sniper
+  components:
+  - type: SpawnPoint
+    job_id: BDWSniper
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointBDWSniperLate
+  parent: SpawnPointJobBase
+  name: BDW sniper
+  suffix: Late Join Spawn
+  components:
+  - type: SpawnPoint
+    job_id: BDWSniper
+    spawn_type: LateJoinJob
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointBDWRifleMan
+  parent: SpawnPointJobBase
+  name: BDW rifle man
+  components:
+  - type: SpawnPoint
+    job_id: BDWRifleMan
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointBDWRifleManLate
+  parent: SpawnPointJobBase
+  name: BDW rifle man
+  suffix: Late Join Spawn
+  components:
+  - type: SpawnPoint
+    job_id: BDWRifleMan
+    spawn_type: LateJoinJob
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointBDWRTO
+  parent: SpawnPointJobBase
+  name: BDW RTO
+  components:
+  - type: SpawnPoint
+    job_id: BDWRTO
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointBDWRTOLate
+  parent: SpawnPointJobBase
+  name: BDW RTO
+  suffix: Late Join Spawn
+  components:
+  - type: SpawnPoint
+    job_id: BDWRTO
+    spawn_type: LateJoinJob
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointBDWAntiTank
+  parent: SpawnPointJobBase
+  name: BDW anti-tank
+  components:
+  - type: SpawnPoint
+    job_id: BDWAntiTank
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointBDWAntiTankLate
+  parent: SpawnPointJobBase
+  name: BDW anti-tank
+  suffix: Late Join Spawn
+  components:
+  - type: SpawnPoint
+    job_id: BDWAntiTank
+    spawn_type: LateJoinJob
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointBDWGrenadier
+  parent: SpawnPointJobBase
+  name: BDW grenadier
+  components:
+  - type: SpawnPoint
+    job_id: BDWGrenadier
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointBDWGrenadierLate
+  parent: SpawnPointJobBase
+  name: BDW grenadier
+  suffix: Late Join Spawn
+  components:
+  - type: SpawnPoint
+    job_id: BDWGrenadier
+    spawn_type: LateJoinJob
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointBDWReservist
+  parent: SpawnPointJobBase
+  name: BDW reservist
+  components:
+  - type: SpawnPoint
+    job_id: BDWReservist
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointBDWReservistLate
+  parent: SpawnPointJobBase
+  name: BDW reservist
+  suffix: Late Join Spawn
+  components:
+  - type: SpawnPoint
+    job_id: BDWReservist
+    spawn_type: LateJoinJob
+  - type: Sprite
+    state: green
+
+# NVA
+- type: entity
+  id: SpawnPointNVAPlatoonLeader
+  parent: SpawnPointJobBase
+  name: NVA platoon leader
+  components:
+  - type: SpawnPoint
+    job_id: NVAPlatoonLeader
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointNVAPlatoonLeaderLate
+  parent: SpawnPointJobBase
+  name: NVA platoon leader
+  suffix: Late Join Spawn
+  components:
+  - type: SpawnPoint
+    job_id: NVAPlatoonLeader
+    spawn_type: LateJoinJob
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointNVATeamLeader
+  parent: SpawnPointJobBase
+  name: NVA team leader
+  components:
+  - type: SpawnPoint
+    job_id: NVATeamLeader
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointNVATeamLeaderLate
+  parent: SpawnPointJobBase
+  name: NVA team leader
+  suffix: Late Join Spawn
+  components:
+  - type: SpawnPoint
+    job_id: NVATeamLeader
+    spawn_type: LateJoinJob
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointNVAMedic
+  parent: SpawnPointJobBase
+  name: NVA medic
+  components:
+  - type: SpawnPoint
+    job_id: NVAMedic
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointNVAMedicLate
+  parent: SpawnPointJobBase
+  name: NVA medic
+  suffix: Late Join Spawn
+  components:
+  - type: SpawnPoint
+    job_id: NVAMedic
+    spawn_type: LateJoinJob
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointNVAMachineGunner
+  parent: SpawnPointJobBase
+  name: NVA machine gunner
+  components:
+  - type: SpawnPoint
+    job_id: NVAMachineGunner
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointNVAMachineGunnerLate
+  parent: SpawnPointJobBase
+  name: NVA machine gunner
+  suffix: Late Join Spawn
+  components:
+  - type: SpawnPoint
+    job_id: NVAMachineGunner
+    spawn_type: LateJoinJob
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointNVASniper
+  parent: SpawnPointJobBase
+  name: NVA sniper
+  components:
+  - type: SpawnPoint
+    job_id: NVASniper
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointNVASniperLate
+  parent: SpawnPointJobBase
+  name: NVA sniper
+  suffix: Late Join Spawn
+  components:
+  - type: SpawnPoint
+    job_id: NVASniper
+    spawn_type: LateJoinJob
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointNVARifleMan
+  parent: SpawnPointJobBase
+  name: NVA rifle man
+  components:
+  - type: SpawnPoint
+    job_id: NVARifleMan
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointNVARifleManLate
+  parent: SpawnPointJobBase
+  name: NVA rifle man
+  suffix: Late Join Spawn
+  components:
+  - type: SpawnPoint
+    job_id: NVARifleMan
+    spawn_type: LateJoinJob
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointNVARTO
+  parent: SpawnPointJobBase
+  name: NVA RTO
+  components:
+  - type: SpawnPoint
+    job_id: NVARTO
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointNVARTOLate
+  parent: SpawnPointJobBase
+  name: NVA RTO
+  suffix: Late Join Spawn
+  components:
+  - type: SpawnPoint
+    job_id: NVARTO
+    spawn_type: LateJoinJob
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointNVAGrenadier
+  parent: SpawnPointJobBase
+  name: NVA grenadier
+  components:
+  - type: SpawnPoint
+    job_id: NVAGrenadier
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointNVAGrenadierLate
+  parent: SpawnPointJobBase
+  name: NVA grenadier
+  suffix: Late Join Spawn
+  components:
+  - type: SpawnPoint
+    job_id: NVAGrenadier
+    spawn_type: LateJoinJob
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointNVAReservist
+  parent: SpawnPointJobBase
+  name: NVA reservist
+  components:
+  - type: SpawnPoint
+    job_id: NVAReservist
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointNVAReservistLate
+  parent: SpawnPointJobBase
+  name: NVA reservist
+  suffix: Late Join Spawn
+  components:
+  - type: SpawnPoint
+    job_id: NVAReservist
+    spawn_type: LateJoinJob
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointNVAAutoRifleMan
+  parent: SpawnPointJobBase
+  name: NVA autorifle man
+  components:
+  - type: SpawnPoint
+    job_id: NVAAutoRifleMan
+  - type: Sprite
+    state: green
+
+- type: entity
+  id: SpawnPointNVAAutoRifleManLate
+  parent: SpawnPointJobBase
+  name: NVA autorifle man
+  suffix: Late Join Spawn
+  components:
+  - type: SpawnPoint
+    job_id: NVAAutoRifleMan
+    spawn_type: LateJoinJob
+  - type: Sprite
+    state: green

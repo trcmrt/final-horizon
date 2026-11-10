@@ -41,11 +41,39 @@
       entity_storage: !type:AllSelector
         children:
         - id: FHMortarShellHE
-          amount: 10
+          amount: 20
         - id: FHMortarBasic
           amount: 1
         - id: Wrench
           amount: 1
+
+- type: entity
+  parent: FHCrateGeneric
+  id: FHCrateFilledGauzePACT
+  name: gauze crate
+  suffix: pact
+  description: A crate with gauze packets.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: FHGauzePacketPACT
+          amount: 30
+
+- type: entity
+  parent: FHCrateGeneric
+  id: FHCrateFilledGauzeNATO
+  name: gauze crate
+  suffix: nato
+  description: A crate with gauze packets.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: FHGauzePacketNATO
+          amount: 30
 
 # ammo
 - type: entity
@@ -59,6 +87,19 @@
       entity_storage: !type:AllSelector
         children:
         - id: FHMagazineRifleM16Full
+          amount: 10
+
+- type: entity
+  parent: FHCrateAmmo
+  id: FHCrateFilledAmmoG3A3
+  name: G3A3 ammo crate
+  description: A crate filled with ammo.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: FHMagazineRifleG3A3Full
           amount: 10
 
 - type: entity
@@ -85,6 +126,19 @@
       entity_storage: !type:AllSelector
         children:
         - id: FHMagazineRifleAK74BakeliteFull
+          amount: 10
+
+- type: entity
+  parent: FHCrateAmmo
+  id: FHCrateFilledAmmoAKM
+  name: akm ammo crate
+  description: A crate filled with ammo.
+  components:
+  - type: EntityTableContainerFill
+    containers:
+      entity_storage: !type:AllSelector
+        children:
+        - id: FHMagazineRifleMPIKMFull
           amount: 10
 
 - type: entity

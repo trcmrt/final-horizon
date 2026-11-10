@@ -22,8 +22,7 @@
     - Back
     - suitStorage
   - type: Gun
-    fireRate: 7.2
-    angleIncrease: 1.5
+    fireRate: 7.5
     selectedMode: FullAuto
     availableModes:
       - FullAuto
@@ -67,20 +66,5 @@
   - type: Appearance
     appearanceDataInit:
      enum.AmmoVisuals.MagLoaded: false
-  - type: GunWieldBonus
-    minAngle: -45
-    maxAngle: -43
-  - type: Scope
-    requireWielding: true
-    zoomLevels:
-    - zoom: 1.8
-      offset: 13
-      allowMovement: true
-      doAfter: 0.15
-  - type: SpeedModifiedOnWield
-    walkModifier: 0.6
-    sprintModifier: 0.6
-  - type: WieldableDoAfter
-    timer: 0.6
   - type: FarGunshot
-    sound: /Audio/_FinalHorizon/Weapons/Guns/Far/ak74.ogg
+    sound: /Audio/_FinalHorizon/Weapons/Guns/Far/ak_dist.ogg

@@ -267,6 +267,35 @@
         faction: Warpact
         factionName: "Nationale Volksarmee"
 
+- type: job
+  id: NVAReservist
+  name: job-name-NVA-reservist
+  description: job-description-NVA-reservist
+  playTimeTracker: NVAReservist
+  startingGear: NVAUniformReservist
+  icon: "Pact"
+  whitelisted: false
+  joinNotifiyCrew: false
+  displayWeight: 5
+  special:
+  - !type:AddComponentSpecial
+    components:
+      - type: Fixtures
+        fixtures:
+          fix1:
+            shape:
+              !type:PhysShapeCircle
+              radius: 0.35
+            density: 185
+            restitution: 0.0
+            mask:
+            - MobMaskRedFor
+            layer:
+            - MobLayer
+      - type: GameFactionMember
+        faction: Warpact
+        factionName: "Nationale Volksarmee"
+
 - type: playTimeTracker
   id: NVAPlatoonLeader
 
@@ -293,6 +322,9 @@
 
 - type: playTimeTracker
   id: NVAGrenadier
+
+- type: playTimeTracker
+  id: NVAReservist
   
 - type: startingGear
   id: NVAUniformPlatoonLeader
@@ -315,9 +347,9 @@
     shoes: FHClothingShoesBootsGermanJack
     back: FHClothingBackRadioR105D
     belt: FHClothingBeltNVAHarness
-    pouchleft: FHClothingPouchNVAGrenadeFilled
+    pouchleft: FHClothingPouchNVAVOGFilled
     pouchright: FHClothingPouchNVAAmmoFilled
-    suitstorage: FHWeaponRifleMPIKM
+    suitstorage: FHWeaponRifleMPIKMGL
     head: FHClothingHeadHelmetM56
     pocket1: FHIFAKUSSRFilled
 
@@ -356,9 +388,9 @@
     shoes: FHClothingShoesBootsGermanJack
     back: FHClothingBackpackNVAKit
     belt: FHClothingBeltNVAHarness
-    pouchleft: FHClothingPouchNVAAmmoFilled
-    pouchright: FHClothingPouchNVAAmmoFilled
-    suitstorage: FHWeaponRifleMPIKM
+    pouchleft: FHClothingPouchUSSRSVDFilled
+    pouchright: FHClothingPouchUSSRSVDFilled
+    suitstorage: FHWeaponSnipersSVD
     head: FHClothingHeadHelmetM56
     pocket1: FHIFAKUSSRFilled
 
@@ -409,5 +441,18 @@
     back: FHClothingBackpackNVARPGFilled
     belt: FHClothingBeltNVAHarness
     suitstorage: FHWeaponLauncherRPG7
+    head: FHClothingHeadHelmetM56
+    pocket1: FHIFAKUSSRFilled
+
+- type: startingGear
+  id: NVAUniformReservist
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitNVAStricht
+    shoes: FHClothingShoesBootsGermanJack
+    back: FHClothingBackpackNVAKit
+    belt: FHClothingBeltNVAHarness
+    pouchleft: FHClothingPouchNVAAmmoFilled
+    pouchright: FHClothingPouchNVAAmmoFilled
+    suitstorage: FHWeaponRifleMPIKM
     head: FHClothingHeadHelmetM56
     pocket1: FHIFAKUSSRFilled

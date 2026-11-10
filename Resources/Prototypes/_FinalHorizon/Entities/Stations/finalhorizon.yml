@@ -10,3 +10,17 @@
     - type: GraceWallManager
       delay: 600
     - type: ConquestManager
+
+- type: entity
+  id: FinalHorizonStationBig
+  categories: [ HideSpawnMenu ]
+  components:
+    - type: Transform
+    - type: StationData
+    - type: StationJobs
+      availableJobs: {}
+    - type: StationSpawning
+    - type: GraceWallManager
+      delay: 600
+    - type: ConquestManager
+      maxTickets: 1000

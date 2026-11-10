@@ -1,4 +1,3 @@
-using System.Linq;
 using Content.Client.Gameplay;
 using Content.Shared.Audio;
 using Content.Shared.CCVar;
@@ -6,6 +5,7 @@ using Content.Shared.GameTicking;
 using Content.Shared.Random.Rules;
 using Robust.Client.Player;
 using Robust.Client.State;
+using Robust.Shared;
 using Robust.Shared.Audio;
 using Robust.Shared.Audio.Components;
 using Robust.Shared.Audio.Systems;
@@ -15,6 +15,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Timing;
 using Robust.Shared.Utility;
+using System.Linq;
 
 namespace Content.Client.Audio;
 
@@ -30,8 +31,8 @@ public sealed partial class ContentAudioSystem
     [Dependency] private readonly RulesSystem _rules = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
 
-    private readonly TimeSpan _minAmbienceTime = TimeSpan.FromSeconds(30);
-    private readonly TimeSpan _maxAmbienceTime = TimeSpan.FromSeconds(60);
+    private readonly TimeSpan _minAmbienceTime = TimeSpan.FromSeconds(1); // FH
+    private readonly TimeSpan _maxAmbienceTime = TimeSpan.FromSeconds(2); // FH
 
     private const float AmbientMusicFadeTime = 10f;
     private static float _volumeSlider;
@@ -58,7 +59,7 @@ public sealed partial class ContentAudioSystem
 
     private void InitializeAmbientMusic()
     {
-        Subs.CVar(_configManager, CCVars.AmbientMusicVolume, AmbienceCVarChanged, true);
+        Subs.CVar(_configManager, CVars.AudioMasterVolume, AmbienceCVarChanged, true); // FH - use master audio instead
         _sawmill = _logManager.GetSawmill("audio.ambience");
 
         // Reset audio
@@ -249,7 +250,7 @@ public sealed partial class ContentAudioSystem
             return amb;
         }
 
-        _sawmill.Warning($"Unable to find fallback ambience track");
+        //_sawmill.Warning($"Unable to find fallback ambience track"); // FH - remove the warning
         return null;
     }
 

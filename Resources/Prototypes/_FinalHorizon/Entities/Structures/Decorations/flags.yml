@@ -25,6 +25,24 @@
     sprite: _FinalHorizon/Structures/Decoration/flags_wide.rsi
     state: usmc
 
+- type: entity
+  parent: BaseSign
+  id: FHFlagBDW
+  name: BDW flag
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Decoration/flags.rsi
+    state: bdw
+
+- type: entity
+  parent: BaseSign
+  id: FHFlagDDR
+  name: DDR flag
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Decoration/flags.rsi
+    state: ddr
+
 # flag poles
 - type: entity
   id: FHFlagPoleUSA
@@ -80,6 +98,52 @@
   - type: Sprite
     sprite: _FinalHorizon/Structures/Decoration/flags_pole.rsi
     state: nato
+    drawdepth: Mobs
+    offset: "0.4,1.6"
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.20,-0.20,0.20,0.20"
+        density: 60
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+
+- type: entity
+  id: FHFlagPoleBDW
+  parent: BaseStructure
+  name: BDW flag pole
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Decoration/flags_pole.rsi
+    state: bdw
+    drawdepth: Mobs
+    offset: "0.4,1.6"
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeAabb
+          bounds: "-0.20,-0.20,0.20,0.20"
+        density: 60
+        mask:
+        - MachineMask
+        layer:
+        - MidImpassable
+        - LowImpassable
+
+- type: entity
+  id: FHFlagPoleDDR
+  parent: BaseStructure
+  name: DDR flag pole
+  components:
+  - type: Sprite
+    sprite: _FinalHorizon/Structures/Decoration/flags_pole.rsi
+    state: ddr
     drawdepth: Mobs
     offset: "0.4,1.6"
   - type: Fixtures

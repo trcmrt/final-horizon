@@ -16,7 +16,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 100
+        damage: 50
       behaviors:
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
@@ -31,10 +31,17 @@
         - ItemMask
         layer:
         - SlipLayer
+        hard: false
   - type: SunShadowCast
   - type: SpeedModifierContacts
     walkSpeedModifier: 0.6
     sprintSpeedModifier: 0.6
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          WoodBulletImpact
+
 
 - type: entity
   id: FHWindowFrameMetal
@@ -54,7 +61,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 200
+        damage: 75
       behaviors:
         - !type:DoActsBehavior
           acts: [ "Destruction" ]
@@ -69,7 +76,13 @@
         - ItemMask
         layer:
         - SlipLayer
+        hard: false
   - type: SunShadowCast
   - type: SpeedModifierContacts
     walkSpeedModifier: 0.6
     sprintSpeedModifier: 0.6
+  - type: RangedDamageSound
+    soundGroups:
+      Brute:
+        collection:
+          MetalBulletImpact

@@ -39,6 +39,8 @@ namespace Content.Server._Funkystation.ReagentFires.Systems
 
         private readonly List<EntityUid> _toExtinguish = new();
         private readonly string[] _burntDecals = ["burnt1", "burnt2", "burnt3", "burnt4"];
+        private readonly ProtoId<DamageTypePrototype> _structuralId = new("Structural"); // FH Fix literal value
+        private readonly ProtoId<DamageTypePrototype> _heatId = new("Heat"); // FH Fix literal value
 
         public override void Initialize()
         {
@@ -407,8 +409,8 @@ namespace Content.Server._Funkystation.ReagentFires.Systems
                 var standingEntities = new HashSet<EntityUid>();
                 _lookup.GetLocalEntitiesIntersecting(gridUid.Value, tilePos, standingEntities, 0f);
 
-                var structuralProto = _prototypeManager.Index<DamageTypePrototype>("Structural");
-                var heatProto = _prototypeManager.Index<DamageTypePrototype>("Heat");
+                var structuralProto = _prototypeManager.Index(_structuralId); // FH Fix literal value
+                var heatProto = _prototypeManager.Index(_heatId); // FH Fix literal value
 
                 var structuralDamage = new DamageSpecifier(structuralProto, 2f * flammability);
                 var heatDamage = new DamageSpecifier(heatProto, 2f * flammability);

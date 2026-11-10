@@ -47,6 +47,7 @@
   - BDWAntiTank
   - BDWRTO
   - BDWRifleMan
+  - BDWReservist
 
 - type: department
   id: NVA
@@ -63,3 +64,4 @@
   - NVAGrenadier
   - NVARTO
   - NVARifleMan
+  - NVAReservist

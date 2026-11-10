@@ -1,0 +1,35 @@
+- type: gameMap
+  id: Alsfeld
+  mapName: Alsfeld
+  mapPath: /Maps/_FinalHorizon/alsfeld.yml
+  minPlayers: 0
+  maxPlayers: 80
+  stations:
+    Alsfeld:
+      stationProto: FinalHorizonStationBig
+      components:
+        - type: MetaData
+          name: Alsfeld
+        - type: StationJobs
+          availableJobs:
+            BDWPlatoonLeader: [ 2, 2 ]
+            BDWTeamLeader: [ 6, 6 ]
+            BDWMedic: [ 6, 6 ]
+            BDWMachineGunner: [ 6, 6 ]
+            BDWSniper: [ 2, 2 ]
+            BDWRTO: [ 6, 6 ]
+            BDWGrenadier: [ 6, 6 ]
+            BDWAntiTank: [ 6, 6 ]
+            BDWRifleMan: [ 20, 20 ]
+            BDWReservist: [ 40, 40 ]
+            NVAPlatoonLeader: [ 2, 2 ]
+            NVATeamLeader: [ 6, 6 ]
+            NVAMedic: [ 6, 6 ]
+            NVAMachineGunner: [ 2, 2 ]
+            NVAGrenadier: [ 6, 6 ]
+            NVASniper: [ 2, 2 ]
+            NVARTO: [ 6, 6 ]
+            NVARifleMan: [ 20, 20 ]
+            NVAReservist: [ 40, 40 ]
+        - type: MultiMapLoader
+          maps: [ "/Maps/_FinalHorizon/Bases/bdw.yml", "/Maps/_FinalHorizon/Bases/nva.yml" ]

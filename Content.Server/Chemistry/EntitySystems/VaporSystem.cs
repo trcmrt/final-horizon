@@ -26,7 +26,7 @@ namespace Content.Server.Chemistry.EntitySystems
         [Dependency] private IPrototypeManager _protoManager = default!;
         [Dependency] private ReactiveSystem _reactive = default!;
         [Dependency] private ThrowingSystem _throwing = default!;
-        [Dependency] private SharedAppearanceSystem _appearance = default!;
+        //[Dependency] private SharedAppearanceSystem _appearance = default!; // FH unused
         [Dependency] private SharedMapSystem _map = default!;
         [Dependency] private SharedPhysicsSystem _physics = default!;
         [Dependency] private SharedSolutionContainerSystem _solutionContainer = default!;
